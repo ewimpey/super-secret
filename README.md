@@ -1,5 +1,5 @@
 # super-secret
-Super Secret, but full of trivial commits.......
+Super Secret, but full of trivial commits.........
 
 * 1/7   1/14  1/21
 * 1/8
