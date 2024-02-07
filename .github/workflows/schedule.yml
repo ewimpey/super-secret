@@ -1,0 +1,24 @@
+on:
+  schedule:
+    - cron: '0 16 7 2 *' # February 7th at 16:00 UTC
+    - cron: '0 16 8 2 *' # February 8th at 16:00 UTC
+    - cron: '0 16 9 2 *' # February 9th at 16:00 UTC
+    - cron: '0 16 17 2 *' # February 17th at 16:00 UTC
+    - cron: '0 16 21 2 *' # February 21st at 16:00 UTC
+    - cron: '0 16 22 2 *' # February 22nd at 16:00 UTC
+    - cron: '0 16 23 2 *' # February 23rd at 16:00 UTC
+
+jobs:
+  make_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Make a trivial change
+        run: echo "Commit on `date`" >> log.txt
+      - name: Commit and push if there are changes
+        run: |
+          git config --global user.email "evan.wimpey@gmail.com"
+          git config --global user.name "Evan Wimpey"
+          git add -A
+          git diff --staged --quiet || git commit -m "Trivial commit on `date`"
+          git push
