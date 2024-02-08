@@ -1,4 +1,7 @@
 # super-secret
+
+## TODO: Create a log file
+
 Super Secret, but full of trivial commits.........why, oh why??
 
 * 1/7   1/14  1/21
