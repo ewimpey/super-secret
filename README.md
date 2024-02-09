@@ -1,6 +1,6 @@
 # super-secret
 
-## TODO: Create a log file
+## TODO: Create a log file and action
 
 Super Secret, but full of trivial commits.........why, oh why??
 
