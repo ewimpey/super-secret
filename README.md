@@ -3,7 +3,7 @@
 ## TODO: Create a log file and action, add permissions
 * 02/21 - permissions issues persist
 
-Super Secret, but full of trivial commits.........why, oh why??
+Super Secret, but full of trivial commits.........why, oh why???
 
 * 1/7   1/14  1/21
 * 1/8
